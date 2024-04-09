@@ -1,6 +1,5 @@
 import React from 'react'
 import { TPostData } from '../../../lib/types/PostDataTypes'
-import Image from 'next/image'
 import Link from 'next/link'
 
 const generateTagBorderColors = (array: string[]) => {
@@ -17,6 +16,11 @@ const generateTagBorderColors = (array: string[]) => {
 }
 
 export default function PostCard({ data }: { data: TPostData }) {
+  if (!data) {
+    // Handle the case where data is undefined
+    return <div>No data available</div>
+  }
+
   const { title, location, shDesc, tags, image } = data
   // const formattedTags = tags.split(',').map(tag => tag.trim().toLowerCase())
 
