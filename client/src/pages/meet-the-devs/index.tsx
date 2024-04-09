@@ -19,24 +19,6 @@ export default function MeetTheDevs() {
       portfolioURL: 'https://haanna.com',
       githubURL: 'https://github.com/ha-anna',
       responsibilities: 'Responsible for design, wireframes, frontend...'
-    },
-    {
-      name: 'devim',
-      portfolioURL: '',
-      githubURL: 'https://github.com/devimalka',
-      responsibilities: 'Responsible for backend, frontend...'
-    },
-    {
-      name: 'horus',
-      portfolioURL: '',
-      githubURL: 'https://github.com/nubiv',
-      responsibilities: 'Responsible for backend, frontend...'
-    },
-    {
-      name: 'lei',
-      portfolioURL: '',
-      githubURL: 'https://github.com/leixdd',
-      responsibilities: 'Responsible for backend, frontend...'
     }
   ]
 
