@@ -18,6 +18,6 @@ export default function NavMobile({ isLoggedIn }: { isLoggedIn: boolean }) {
     } else {
       setMenuComponent(<MenuMobile />)
     }
-  })
+  }, [isLoggedIn])
   return <nav className='flex'>{menuComponent}</nav>
 }

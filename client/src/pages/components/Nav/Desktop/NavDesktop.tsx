@@ -11,7 +11,7 @@ export default function NavDesktop({ isLoggedIn }: { isLoggedIn: boolean }) {
     setMenuComponent(() => {
       return isLoggedIn ? <UserMenuDesktop /> : <SigninSignupDesktop />
     })
-  }, [])
+  }, [isLoggedIn])
 
   const menuItems: TMenuItems = [
     {
