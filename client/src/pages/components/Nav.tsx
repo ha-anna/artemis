@@ -43,8 +43,9 @@ export default function Nav() {
         <SVGComponent
           url={'/images/artemis_logo.svg'}
           alt={'Artemis logo with a cat sitting on the right'}
-          width={206}
-          height={41}
+          width={0}
+          height={0}
+          CSSclass='h-auto w-[206px]'
         />
       </Link>
       {navComponent}

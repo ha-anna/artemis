@@ -40,8 +40,9 @@ export default function Footer() {
         <SVGComponent
           url={'/images/artemis_logo.svg'}
           alt={'Artemis logo with a cat sitting on the right'}
-          width={120}
-          height={20}
+          width={0}
+          height={0}
+          CSSclass='h-auto w-[120px]'
         />
       </Link>
       <p className='mr-auto'>
