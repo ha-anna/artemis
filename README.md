@@ -128,19 +128,7 @@ To install Next.js on your machine you will need:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/chingu-voyages/v44-tier3-team-29.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Start the development server
-   ```
-   npm run dev
-   ```
-4. To view your application go to
-   ```
-   http://localhost:3000
+   git clone https://github.com/ha-anna/artemis.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -162,9 +150,9 @@ To install Next.js on your machine you will need:
 - [ ] Post update and deletion capabilities to allow users to modify or remove
       their posts as needed.
 
-See the
+<!-- See the
 [open issues](https://github.com/chingu-voyages/v44-tier3-team-29/issues) for a
-full list of proposed features (and known issues).
+full list of proposed features (and known issues). -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
