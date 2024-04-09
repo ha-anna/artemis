@@ -32,7 +32,7 @@ export default function Nav() {
     windowWidth >= 900
       ? setNavComponent(<NavDesktop isLoggedIn={user.isLoggedIn} />)
       : setNavComponent(<NavMobile isLoggedIn={user.isLoggedIn} />)
-  }, [windowWidth])
+  }, [windowWidth, user.isLoggedIn])
 
   return (
     <div className='flex justify-between p-4 text-xl items-center relative z-50'>
