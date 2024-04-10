@@ -104,7 +104,7 @@ export default function CreatePost() {
               </label>
               <input
                 onChange={handleChange}
-                className='border-2 border-artemis-black rounded p-2 mt-2 mb-4'
+                className='border-2 border-artemis-black rounded p-2 mt-1 mb-4'
                 type='text'
                 id='title'
                 name='title'
@@ -121,7 +121,7 @@ export default function CreatePost() {
               </label>
               <input
                 onChange={handleChange}
-                className='border-2 border-artemis-black rounded p-2 mt-2 mb-4'
+                className='border-2 border-artemis-black rounded p-2 mt-1 mb-4'
                 type='text'
                 id='location'
                 name='location'
@@ -138,7 +138,7 @@ export default function CreatePost() {
               </label>
               <input
                 onChange={handleChange}
-                className='border-2 border-artemis-black rounded p-2 mt-2 mb-4'
+                className='border-2 border-artemis-black rounded p-2 mt-1 mb-4'
                 type='text'
                 id='shDesc'
                 name='shDesc'
@@ -156,7 +156,7 @@ export default function CreatePost() {
               </label>
               <input
                 onChange={handleChange}
-                className='border-2 border-artemis-black rounded p-2 mt-2 mb-4'
+                className='border-2 border-artemis-black rounded p-2 mt-1 mb-4'
                 type='text'
                 id='tags'
                 name='tags'
@@ -167,7 +167,7 @@ export default function CreatePost() {
             <div className='flex flex-col'>
               <label
                 htmlFor='image'
-                className='font-bold text-lg'>
+                className='font-bold'>
                 Image
               </label>
               <input
@@ -176,7 +176,7 @@ export default function CreatePost() {
                 id='image'
                 name='image'
                 accept='image/*'
-                className='rounded file:border-0 border-2 file:border-r-2 file:border-artemis-black border-artemis-black file:overflow-hidden file:bg-artemis-white file:color-artemis-black file:p-2 file:cursor-pointer file:mr-5 file:w-[40%] file:hover:bg-artemis-yellow file:ease-in-out file:duration-300 mt-2 mb-4'
+                className='rounded file:border-0 border-2 file:border-r-2 file:border-artemis-black border-artemis-black file:overflow-hidden file:bg-artemis-blue file:color-artemis-black file:p-2 file:cursor-pointer file:mr-5 file:w-[40%] mt-1 mb-4'
               />
             </div>
           </div>
