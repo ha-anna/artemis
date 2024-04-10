@@ -189,7 +189,7 @@ export default function CreatePost() {
             </label>
             <textarea
               onChange={handleChange}
-              className='border-2 border-artemis-black rounded p-2 mt-2 mb-4 h-full'
+              className='border-2 border-artemis-black rounded p-2 mt-1 mb-4 h-full'
               id='lgDesc'
               name='lgDesc'
               rows={8}
