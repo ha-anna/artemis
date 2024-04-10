@@ -67,9 +67,9 @@ export default function MeetTheDevs() {
                   <SVGComponent
                     url={`/images/icons/${dev.name}-icon.svg`}
                     alt={''}
-                    width={46}
-                    height={46}
-                    CSSclass={''}
+                    width={0}
+                    height={0}
+                    CSSclass={'h-[46px] w-[46px]'}
                   />
                   <div className='ml-3 mt-1.5'>
                     <h3 className='capitalize font-semibold'>{dev.name}</h3>
@@ -95,9 +95,9 @@ export default function MeetTheDevs() {
                   <SVGComponent
                     url={`/images/icons/${dev.name}-icon.svg`}
                     alt={''}
-                    width={46}
-                    height={46}
-                    CSSclass={''}
+                    width={0}
+                    height={0}
+                    CSSclass={'h-[46px] w-[46px]'}
                   />
                   <div className='ml-3 mt-1.5'>
                     <h3 className='capitalize font-semibold'>{dev.name}</h3>
