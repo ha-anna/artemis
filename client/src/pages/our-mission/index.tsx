@@ -18,26 +18,60 @@ export default function OurMission() {
             reduction of stray animal populations on the streets by facilitating
             their rescue, rehabilitation, and adoption.
           </p>
-          <p className='my-5'>
+          <h2 className='text-lg font-bold mt-5'>Meaning of Artemis</h2>
+          <p className='my-2'>
             Inspired by the love and compassion that people have for animals and
             drawing from the legacy of Artemis, the Greek God associated with
             animals and their protection, we strive to create a better world for
             stray animals. We believe that every animal deserves care, love, and
             a chance at a fulfilling life.
           </p>
-          <p className='my-5'>
+          <h2 className='text-lg font-bold mt-5'>Our Story</h2>
+          <p className='my-2'>
             Artemis was born during Chingu&apos;s 44th Voyage, which took place
-            from May 1st, 2023 to June 11th, 2023. We are driven by a passionate
-            community of individuals who came together with the shared purpose
-            of making a positive impact on the lives of stray animals.
+            from May 1st, 2023 to June 11th, 2023. During that time, four
+            developers (
+            <a
+              href='https://github.com/ha-anna'
+              className='underline underline-offset-2'
+              target='_blank'>
+              Anna
+            </a>
+            ,{' '}
+            <a
+              href='https://github.com/devimalka'
+              className='underline underline-offset-2'
+              target='_blank'>
+              Devim
+            </a>
+            ,{' '}
+            <a
+              href='https://github.com/nubiv'
+              className='underline underline-offset-2'
+              target='_blank'>
+              Horus
+            </a>
+            ,{' '}
+            <a
+              href='https://github.com/leixdd'
+              className='underline underline-offset-2'
+              target='_blank'>
+              Lei
+            </a>
+            ) came together with the shared purpose of making a positive impact
+            on the lives of stray animals.
+            <br />
+            Starting April 2024, this project is being improved and maintained
+            solely by Anna.
           </p>
-          <p className='my-5'>
+          <h2 className='text-lg font-bold mt-5'>Join Us</h2>
+          <p className='my-2'>
             Join us on our journey to build a platform that empowers
             individuals, organizations, and communities to collaborate,
             advocate, and take action for the well-being and welfare of stray
             animals.
           </p>
-          <p className='my-5'>
+          <p className='mt-12 italic text-center'>
             Together, we can make a difference, one animal at a time.
           </p>
         </article>

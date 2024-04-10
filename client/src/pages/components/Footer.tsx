@@ -46,9 +46,11 @@ export default function Footer() {
         />
       </Link>
       <p className='mr-auto'>
-        <span className='font-semibold block md:inline'>Made by</span> Anna,
-        Devim, Horus, Lei <br />
-        of Chingu Voyage no. 44, 2023
+        <span className='font-semibold block md:inline'>
+          Made with love <br />
+          by
+        </span>{' '}
+        Anna
       </p>
       <ul className='grid grid-cols-3 gap-x-6 gap-y-1 mx-4'>
         <li className='order-1'>
