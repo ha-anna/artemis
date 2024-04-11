@@ -4,10 +4,10 @@ import axiosInstance from './authHeader'
 export type TPostCreateData = {
   title: string
   location: string
-  shDesc: string
+  descShort: string
   tags: string
   image: string
-  lgDesc: string
+  descLong: string
 }
 
 export type TPostEditData = Partial<TPostCreateData>

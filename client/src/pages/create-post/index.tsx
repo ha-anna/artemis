@@ -11,10 +11,10 @@ export default function CreatePost() {
   const [postData, setPostData] = React.useState<TPostCreateData>({
     title: '',
     location: '',
-    shDesc: '',
+    descShort: '',
     tags: '',
     image: '',
-    lgDesc: ''
+    descLong: ''
   })
   const [errorMessage, setErrorMessage] = React.useState('')
   const { createPost } = usePost()
@@ -27,25 +27,7 @@ export default function CreatePost() {
       addNewToast({ type: 'warning', message: 'Please sign in...' })
       router.push('/sign-in')
     }
-
-    // eslint-disable-next-line
   }, [])
-
-  React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const storedData = localStorage.getItem('postData')
-      if (storedData !== null) {
-        const parsedData = JSON.parse(storedData)
-        setPostData(parsedData)
-      }
-    }
-  }, [])
-
-  React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('postData', JSON.stringify(postData))
-    }
-  }, [postData])
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -143,7 +125,7 @@ export default function CreatePost() {
                 id='shDesc'
                 name='shDesc'
                 maxLength={200}
-                value={postData.shDesc}
+                value={postData.descShort}
                 required
               />
             </div>
@@ -193,7 +175,7 @@ export default function CreatePost() {
               id='lgDesc'
               name='lgDesc'
               rows={8}
-              value={postData.lgDesc}
+              value={postData.descLong}
               required></textarea>
           </div>
 
