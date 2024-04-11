@@ -17,27 +17,10 @@ const generateTagBorderColors = (array: string[]) => {
 
 export default function PostCard({ data }: { data: TPostData }) {
   if (!data) {
-    // Handle the case where data is undefined
-    return <div>No data available</div>
+    throw Error('No data available')
   }
 
   const { title, location, shDesc, tags, image } = data
-  // const formattedTags = tags.split(',').map(tag => tag.trim().toLowerCase())
-
-  // const tagsHtml = formattedTags.map((tag, i) => {
-  //   const borderColors = generateTagBorderColors(formattedTags)
-  //   const style =
-  //     'mr-2 my-1 border-2 py-0.5 px-2 px-2 rounded' + ' ' + borderColors[i]
-  //   return (
-  //     <li
-  //       key={tag}
-  //       className={style}>
-  //       <Link href={tag}>#{tag}</Link>
-  //     </li>
-  //   )
-  // })
-
-  // Tags are already stored as an array but might need to be optimized further in the future
   const tagsHtml = tags.map((tag, i) => {
     const borderColors = generateTagBorderColors(tags)
     const style =
@@ -51,29 +34,30 @@ export default function PostCard({ data }: { data: TPostData }) {
     )
   })
 
-  /* eslint-disable @next/next/no-img-element */
   return (
-    <div className='border-2 border-artemis-black rounded-md p-5 m-3'>
+    <div className='border-2 border-artemis-black rounded-md p-5 m-3 bg-artemis-white'>
       <Link href='post_address'>
         <div className='border-2 border-artemis-black rounded'>
           <img
-            alt=''
+            alt={''}
             src={image}
             className='object-cover'
             key={title}
             width={300}
             height={200}
-            loading='lazy'
           />
         </div>
       </Link>
+      {/* TODO: add post address */}
       <Link href='post_address'>
         <h3 className='text-3xl mt-2'>{title}</h3>
       </Link>
+      {/* TODO: add searchable location link */}
       <Link href={location}>
         <span className='color-artemis-gray opacity-50'>{location}</span>
       </Link>
       <p className='py-3 text-lg'>{shDesc}</p>
+      {/* TODO: add searchable hashtag links */}
       <ul className='flex flex-wrap'>{tagsHtml}</ul>
     </div>
   )

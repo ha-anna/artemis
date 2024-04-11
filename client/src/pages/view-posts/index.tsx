@@ -4,7 +4,6 @@ import PostCard from './components/PostCard'
 import { TPostData } from '../../lib/types/PostDataTypes'
 import { usePost } from '@/lib/hooks/usePost'
 
-// TODO: check if img is necessary when creating a post
 const addPlaceholders = (data: TPostData[]) => {
   const placeholders = [
     '/images/placeholder-cat-green.jpg',
@@ -20,63 +19,62 @@ const addPlaceholders = (data: TPostData[]) => {
 }
 
 export default function ViewPosts() {
-  const [postsData, setPostsData] = React.useState<TPostData[]>([
-    {
-      title: 'Cat',
-      location: 'Seoul',
-      shDesc: 'Cute and small',
-      tags: ['Cat, small, hungry'],
-      image: '',
-      lgDesc: 'Cute small cat, goes meow meow'
-    },
-    {
-      title: 'Cat',
-      location: 'Seoul',
-      shDesc: 'Cute and small',
-      tags: ['Cat, small, hungry'],
-      image: '',
-      lgDesc: 'Cute small cat, goes meow meow'
-    },
-    {
-      title: 'Cat',
-      location: 'Seoul',
-      shDesc: 'Cute and small',
-      tags: ['Cat, small, hungry'],
-      image: '',
-      lgDesc: 'Cute small cat, goes meow meow'
-    },
-    {
-      title: 'Cat',
-      location: 'Seoul',
-      shDesc: 'Cute and small',
-      tags: ['Cat, small, hungry'],
-      image: '',
-      lgDesc: 'Cute small cat, goes meow meow'
-    },
-    {
-      title: 'Cat',
-      location: 'Seoul',
-      shDesc: 'Cute and small',
-      tags: ['Cat, small, hungry'],
-      image: '',
-      lgDesc: 'Cute small cat, goes meow meow'
-    }
-  ])
+  const [postsData, setPostsData] = React.useState<TPostData[]>([])
   const { getAllPosts } = usePost()
 
   React.useEffect(() => {
     fetchPosts()
-
-    // eslint-disable-next-line
   }, [])
 
   async function fetchPosts() {
-    const data = await getAllPosts().catch(err => console.log(err))
+    // const data = await getAllPosts().catch(err => console.log(err))
 
-    if (!data) return
+    // if (!data) return
 
-    const postsWithImage = addPlaceholders(data.posts)
-    console.log(postsWithImage)
+    const data = [
+      {
+        title: 'Cat',
+        location: 'Seoul',
+        shDesc: 'Cute and small',
+        tags: ['Cat', 'small', 'hungry'],
+        image: '',
+        lgDesc: 'Cute small cat, goes meow meow'
+      },
+      {
+        title: 'Cat',
+        location: 'Seoul',
+        shDesc: 'Cute and small',
+        tags: ['Cat', 'small', 'hungry'],
+        image: '',
+        lgDesc: 'Cute small cat, goes meow meow'
+      },
+      {
+        title: 'Cat',
+        location: 'Seoul',
+        shDesc: 'Cute and small',
+        tags: ['Cat', 'small', 'hungry'],
+        image: '',
+        lgDesc: 'Cute small cat, goes meow meow'
+      },
+      {
+        title: 'Cat',
+        location: 'Seoul',
+        shDesc: 'Cute and small',
+        tags: ['Cat', 'small', 'hungry'],
+        image: '',
+        lgDesc: 'Cute small cat, goes meow meow'
+      },
+      {
+        title: 'Cat',
+        location: 'Seoul',
+        shDesc: 'Cute and small',
+        tags: ['Cat', 'small', 'hungry'],
+        image: '',
+        lgDesc: 'Cute small cat, goes meow meow'
+      }
+    ]
+
+    const postsWithImage = addPlaceholders(data)
     setPostsData(postsWithImage)
   }
 
