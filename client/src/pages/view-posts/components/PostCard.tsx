@@ -17,7 +17,7 @@ const generateTagBorderColors = (array: string[]) => {
 
 export default function PostCard({ data }: { data: TPostData }) {
   if (!data) {
-    throw Error('No data available')
+    return <div>No data available</div>
   }
 
   const { title, location, shDesc, tags, image } = data
