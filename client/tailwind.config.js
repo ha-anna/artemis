@@ -32,7 +32,7 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'b niko': "url('/images/hero-gradient.svg')",
+        'hero-gradient': "url('/images/hero-gradient.svg')",
         'error-cats': "url('/images/error-cats.svg')",
         'error-cats-mobile': "url('/images/error-cats-mobile.svg')",
         'mission-cats': "url('/images/mission-cats.svg')",
