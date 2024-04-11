@@ -9,7 +9,7 @@ export default function Document() {
           rel='stylesheet'
         />
       </Head>
-      <body className='min-h-screen flex flex-col'>
+      <body className='h-full bg-slate-50 m-auto'>
         <Main />
         <NextScript />
       </body>

@@ -52,7 +52,7 @@ export default function MeetTheDevs() {
 
   return (
     <Layout>
-      <div className='mb-[150px] relative z-[1] p-5 mt-10 flex flex-col items-center'>
+      <div className='mb-[150px] p-5 mt-10 flex flex-col items-center bg-center bg-cover bg-no-repeat bg-devs-gradient-mobile lg:bg-devs-gradient'>
         <h2 className='text-5xl lg:text-6xl mb-8 mt-16 text-center'>
           Meet the Devs
         </h2>
@@ -111,24 +111,6 @@ export default function MeetTheDevs() {
           })}
         </div>
       </div>
-      <SVGComponent
-        url={`/images/meet-the-devs.svg`}
-        alt={''}
-        width={100}
-        height={100}
-        CSSclass={
-          'absolute top-0 left-0 right-0 w-full min-h-[150%] z-0 overflow-hidden hidden lg:block'
-        }
-      />
-      <SVGComponent
-        url={`/images/meet-the-devs-mobile.svg`}
-        alt={''}
-        width={100}
-        height={100}
-        CSSclass={
-          'absolute min-h-[150%] top-[100px] md:top-[150px] opacity-70 left-0 right-0 w-full h-full z-0 overflow-hidden lg:hidden'
-        }
-      />
     </Layout>
   )
 }
