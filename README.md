@@ -12,11 +12,11 @@
   <p align="center">
     A crowd-sourced web application aimed at assisting stray animals in reducing their number on the streets.
     <br />
-    <!-- <a href="https://artemis-home.vercel.app/">View Demo</a>
-    · -->
-    <!-- <a href="https://github.com/chingu-voyages/v44-tier3-team-29/issues">Report Bug</a>
+    <a href="https://artemis--app.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/chingu-voyages/v44-tier3-team-29/issues">Request Feature</a> -->
+    <a href="https://github.com/ha-anna/artemis/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ha-anna/artemis/issues">Request Feature</a>
   </p>
 </div>
 <br />
@@ -51,7 +51,7 @@
 
 ## About The Project
 
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+[![Artemis Home Page Screen Shot](./artemis-hp-screenshot.png)](https://artemis--app.vercel.app)
 
 Artemis is a full-stack web application built using MERN (MongoDB, Express.js,
 React.js, Node.js), Next.js, and TypeScript. The aim of this project is to
