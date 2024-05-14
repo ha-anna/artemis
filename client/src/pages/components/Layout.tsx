@@ -17,7 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const savedValue = window.localStorage.getItem('artemis-consent')
     dispatch(updateConsent({ consent: savedValue == 'true' }))
-  }, [])
+  }, [dispatch])
 
   const handleConsent = () => {
     localStorage.setItem('artemis-consent', 'true')

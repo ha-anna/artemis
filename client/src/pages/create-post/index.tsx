@@ -27,7 +27,7 @@ export default function CreatePost() {
       addNewToast({ type: 'warning', message: 'Please sign in...' })
       router.push('/sign-in')
     }
-  }, [])
+  }, [addNewToast, auth.isLoggedIn, router])
 
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
