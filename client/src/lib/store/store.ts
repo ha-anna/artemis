@@ -3,12 +3,14 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
 import toastList from './features/toasts/toastSlice'
 import socket from './features/socket/socketSlice'
 import auth from './features/auth/authSlice'
+import consent from './features/consent/consentSlice'
 
 export const store = configureStore({
   reducer: {
     toastList: toastList,
     socket: socket,
-    auth: auth
+    auth: auth,
+    consent: consent
   },
   middleware: getDefaultMiddleware => {
     return getDefaultMiddleware({
