@@ -8,7 +8,7 @@ const CookiesPopup: React.FC<CookiesPopupProps> = ({ onConsent }) => {
       <p className='text-center'>
         We use cookies to enhance your experience on our website, including
         providing personalized content and analyzing site traffic. By clicking
-        'Agree', you consent to the use of cookies and other tracking
+        &apos;Agree&apos;, you consent to the use of cookies and other tracking
         technologies.
       </p>
       <button
