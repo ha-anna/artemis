@@ -21,7 +21,7 @@ export const authService = {
       const res = await axiosInstance.post(BASE_URL + '/api/auth/login', data)
 
       if (res.data.success) {
-        localStorage.setItem('user', JSON.stringify(res.data.message))
+        localStorage.setItem('artemis-user', JSON.stringify(res.data.message))
       }
 
       return res.data
@@ -29,7 +29,7 @@ export const authService = {
       if (axios.isAxiosError(err)) {
         return { success: false, message: err.message }
       } else {
-        return { success: false, message: 'Sozz something went wrong...' }
+        return { success: false, message: 'Meo-oh! something went wrong...' }
       }
     }
   },
@@ -40,7 +40,10 @@ export const authService = {
     const user = JSON.parse(localStorage.getItem('user') as string)
 
     if (user) {
-      return { success: false, message: 'Something went wrong while logout.' }
+      return {
+        success: false,
+        message: 'Something went wrong while logging out.'
+      }
     }
 
     return { success: true, message: 'Logged out successfully.' }
@@ -58,7 +61,7 @@ export const authService = {
       if (axios.isAxiosError(err)) {
         return { success: false, message: err.message }
       } else {
-        return { success: false, message: 'Sozz something went wrong...' }
+        return { success: false, message: 'Meo-oh! Something went wrong...' }
       }
     }
   }
